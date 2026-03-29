@@ -1,0 +1,26 @@
+{
+  "Format": "2.9.0",
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Marnie",
+      "Entries": {
+        "Fair_Judged_NPCWon": "{{i18n:MarnieWon}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Willy",
+      "Entries": {
+        "Fair_Judged_NPCWon": "{{i18n:WillyWon}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Clint",
+      "Entries": {
+        "Fair_Judged_NPCWon": "{{i18n:ClintWon}}"
+      }
+    }
+  ]
+}

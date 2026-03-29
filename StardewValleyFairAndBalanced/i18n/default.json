@@ -1,0 +1,7 @@
+{
+  "GrangeDisplayScores_Prefix": "Grange display scores:",
+  "GrangeDisplayScores_ExtraPointsDescription": "You got extra points because {{reason}}.",
+  "GrangeDisplayScores_ExtraPointsReasons": "Pierre tried to bribe Lewis/Lewis was in a good mood/Lewis felt like it/reasons",
+  "GrangeDisplayScores_PointsDeductedDescription": "You got points deducted because {{reason}}.",
+  "GrangeDisplayScores_PointsDeductedReasons": "Pierre bribed Lewis/Lewis was in a bad mood/Lewis felt like it/reasons"
+}
