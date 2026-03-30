@@ -1,7 +1,7 @@
 {
   "Name": "[CP] Stardew Valley Fair and Balanced",
   "Author": "John Peters (you know, the farmer?)",
-  "Version": "1.0.1",
+  "Version": "1.1.0",
   "Description": "Calculate and show semi-random grange scores for NPCs at the Stardew Valley Fair.",
   "UniqueID": "JohnPeters.StardewValleyFairAndBalancedCP",
   "MinimumApiVersion": "3.0.0",

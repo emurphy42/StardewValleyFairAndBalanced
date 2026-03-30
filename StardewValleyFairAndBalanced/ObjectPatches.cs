@@ -106,7 +106,7 @@ namespace StardewValleyFairAndBalanced
             var minScore = (place <= baseGameScoreRanges.Count)
                 ? baseGameScoreRanges[place - 1]
                 : int.MinValue;
-            var maxScore = (place > 0)
+            var maxScore = (place >= 2)
                 ? baseGameScoreRanges[place - 2] - 1
                 : int.MaxValue;
             return new List<int>() { minScore, maxScore };
@@ -194,7 +194,7 @@ namespace StardewValleyFairAndBalanced
                 } else {
                     if (farmerModdedPlace != farmerBaseGamePlace)
                     {
-                        var farmerBaseGameScoreRange = GetFarmerBaseGameScoreRange(farmerBaseGamePlace);
+                        var farmerBaseGameScoreRange = GetFarmerBaseGameScoreRange(farmerModdedPlace);
                         ModInstance.Monitor.Log($"[Stardew Valley Fair and Balanced] Farmer score needs to be {farmerBaseGameScoreRange[0]} to {farmerBaseGameScoreRange[1]} (base game)", LogLevel.Debug);
                         var farmerModdedScoreRange = GetFarmerModdedScoreRange(__instance.grangeScore, NPCScores);
                         ModInstance.Monitor.Log($"[Stardew Valley Fair and Balanced] Farmer score needs to be {farmerModdedScoreRange[0]} to {farmerModdedScoreRange[1]} (modded)", LogLevel.Debug);
