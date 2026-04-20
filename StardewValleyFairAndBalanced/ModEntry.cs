@@ -23,7 +23,7 @@ namespace StardewValleyFairAndBalanced
                 postfix: new HarmonyMethod(typeof(ObjectPatches), nameof(ObjectPatches.Event_interpretGrangeResults_Postfix))
             );
 
-            // add full leaderboard to Lewis's dialogue
+            // show full leaderboard along with Lewis's dialogue
             harmony.Patch(
                 original: AccessTools.Method(typeof(StardewValley.Event), nameof(StardewValley.Event.checkAction)),
                 postfix: new HarmonyMethod(typeof(ObjectPatches), nameof(ObjectPatches.Event_checkAction_Postfix))

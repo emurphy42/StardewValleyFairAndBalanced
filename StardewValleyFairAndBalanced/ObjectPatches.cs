@@ -1,6 +1,5 @@
 ﻿using StardewModdingAPI;
 using StardewValley;
-using StardewValley.GameData.Characters;
 using xTile.Dimensions;
 
 namespace StardewValleyFairAndBalanced
@@ -53,7 +52,7 @@ namespace StardewValleyFairAndBalanced
         // To avoid messing with fractions here, we interpret this as Pierre scoring 90, Marnie 75, Willy 60, but the farmer winning ties.
 
         // This mod randomizes NPC scores, roughly based on a normal distribution with standard deviation 10.
-        // However, the cutoffs of 90 / 75 / 60 are hardcoded within both judgeGrange() and the much more complex checkAction(),
+        // However, the cutoffs of 90 / 75 / 60 are hardcoded within both interpretGrangeResults() and the much more complex checkAction(),
         // so instead of changing those, we also alter the farmer's score as needed to preserve both their place and the relative order.
         // Note that NPC scores don't need to correspond to these cutoffs.
 
@@ -324,6 +323,12 @@ namespace StardewValleyFairAndBalanced
         public static void Event_checkAction_Postfix(Location tileLocation, xTile.Dimensions.Rectangle viewport, Farmer who, Event __instance)
         {
             if (!needToShowLeaderboard)
+            {
+                return;
+            }
+
+            // interpretGrangeResults() is called at the end of Lewis's animation, but grangeScore isn't set to -100 until after you talk to him
+            if (__instance.grangeScore != -100)
             {
                 return;
             }

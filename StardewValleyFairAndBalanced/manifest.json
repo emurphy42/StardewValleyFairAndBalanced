@@ -1,7 +1,7 @@
 {
   "Name": "Stardew Valley Fair and Balanced",
   "Author": "John Peters (you know, the farmer?)",
-  "Version": "1.1.0",
+  "Version": "1.2.0",
   "Description": "Calculate and show semi-random grange scores for NPCs at the Stardew Valley Fair.",
   "UniqueID": "JohnPeters.StardewValleyFairAndBalanced",
   "EntryDll": "StardewValleyFairAndBalanced.dll",
